@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+</head>
+<body>
+
+<script type="text/javascript" src="Javascript/javascript.js"> </script>
+
+<script type="text/javascript" src="Javascript/emailcheck.js"> </script>
+
+  <div class="bgimage">
+    
+
+        <div class="menu">
+      
+      <div class="leftmenu">
+        <h4> Donation Box </h4>
+      </div>
+
+      <div class="rightmenu">
+        <ul>
+          <li ><a href="homepage.html"> HOME </a></li>
+          <li><a href="donatefood.html"> DONATE</a></li>
+          <li><a href="joinus.html">JOIN US</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html"> CONTACT </a></li>
+          <li><a href="login.html"> LOGIN </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="login-box">
+             
+
+             
+                    <form method="post" action="Php/registationvalidation.php" name="fm">
+                       
+                       <p>Username</p> 
+                       <input type="text" name="name" placeholder="Enter Username">
+					   <p id="nameErr" style="color:red;font-size:13px"></p>
+					   
+                       <p>Email</p>
+                       <input type="text" name="email" onkeyup="showHint()" id="mytext" placeholder="Enter Email">
+					   <p id="txtHint" name="txtHint" style="color:red;font-size:13px"></p>
+					   <p id="emailErr" style="color:red;font-size:13px"></p>
+
+                       <p>Phone</p>
+                       <input type="text" name="phone" placeholder="Enter Phone">
+					   <p id="phoneErr" style="color:red;font-size:13px"></p>
+                       
+                       <p>Password</p>
+                       <input type="password" name="pass" placeholder="Enter Password">
+					   <p id="passErr" style="color:red;font-size:13px"></p>
+
+                       <p>Confirm Password</p>
+                       <input type="password" name="cpass" placeholder="Enter Confirm Password">
+					   <p id="cpassErr" style="color:red;font-size:13px"></p>
+                      
+                       <input type="submit" name="submit" onclick="return user_registation_validation();" value="Submit">
+                       
+                       <a href="login.html">Already have Account</a>
+                           
+                
+                    </form>
+        
+        
+        </div>
+
+    
+
+  </div>
+
+</body>
+</html>

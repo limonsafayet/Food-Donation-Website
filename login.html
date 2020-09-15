@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+		 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+		  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+</head>
+<body>
+<script  src="Javascript/loginpage.js"></script>
+
+	<div class="bgimage">
+		
+
+        <div class="menu">
+			
+			<div class="leftmenu">
+				<h4> Donation Box </h4>
+			</div>
+
+			<div class="rightmenu">
+				<ul>
+					<li ><a href="homepage.html"> HOME </a></li>
+					<li><a href="donatefood.html"> DONATE</a></li>
+					<li><a href="joinus.html">JOIN US</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html"> CONTACT </a></li>
+					<li id="fisrtlist"> LOGIN </li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="login-box">
+             
+
+             <img src="avatar.png" class="avatar">
+                 
+                 <h1>Login Here</h1>
+                   
+                    <form action="Php/logincheck.php" method="post" name="fm">
+                       
+                       <p>User Email</p>
+                       <input type="text" name="username" placeholder="Enter Email">
+					   <p id="nameErr" style="color:red;font-size:13px"></p>
+                       <p>Password</p>
+                       <input type="password" name="password" placeholder="Enter Password">
+					   <p id="passErr" style="color:red;font-size:13px"></p>
+					   
+                       <input type="submit" onclick="return check_validation();" name="submit" value="Login">
+                       <a href="#">Forget Password</a></br></br>
+                       <a href="registation.html">Creat Account</a>
+                           
+                
+                    </form>
+        
+        
+        </div>
+
+		
+
+	</div>
+
+</body>
+</html>

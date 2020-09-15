@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<adminpanel>
+	<user type="admin">
+		<name>limon</name>
+		<pass>l12345678</pass>
+		<email>limon6531@gmail.com</email>
+		<type>admin</type>
+    </user>
+	
+	<user type="admin">
+		<name>medha</name>
+		<pass>shariazamanmedha</pass>
+		<email>shariazaman@gmail.com</email>
+		<type>admin</type>
+    </user>
+	
+	
+</adminpanel>
